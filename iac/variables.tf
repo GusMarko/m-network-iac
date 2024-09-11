@@ -24,4 +24,5 @@ variable "private_subnet_cidr" {
 
 variable "env"{
   description = "branch"
+  type = string
 }
