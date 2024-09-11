@@ -25,7 +25,7 @@ resource "aws_subnet" "private_subnet-marko" {
 
  
 tags = {
-   Name = "Public Subnet"
+   Name = "Private Subnet"
  }
 }
 
@@ -85,3 +85,8 @@ resource "aws_route_table" "private_rt-marko" {
   }
 }
 
+# ASSOCIATION PRIVATE SUBNET TO RT
+resource "aws_route_table_association" "private_subnet_asso-marko" {
+  route_table_id = aws_route_table.private_rt-marko.id
+  subnet_id      = aws_subnet.private_subnet-marko.id
+}
