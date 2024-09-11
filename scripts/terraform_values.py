@@ -17,7 +17,7 @@ def replace_tfvars(env, bot3_session):
     access_key = tf_role_credentials["access_key"]
     secret_key = tf_role_credentials["secret_key"]
     tfvars_path = "..iac/terraform.tfvars"
-    backend_config_path = "..iac/providers.tf"
+    backend_config_path = "../iac/providers.tf"
     
     with open (tfvars_path, "r") as f:
         tfvars = f.read()
