@@ -1,4 +1,6 @@
 region = "eu-central-1"
 access_key = "access_key_placeholder"
 secret_key = "secret_key_placeholder"
-
+env = "env_key_placeholder"
+public_subnet_cidr = "10.0.1.0/24"
+private_subnet_cidr = "10.0.4.0/24"
