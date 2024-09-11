@@ -1,6 +1,6 @@
 terraform {
     backend "s3"{
-        bucket = "ttffstatebucket-marko"
+        bucket = "mg-terraform-state-storage"
         key = "m-network-iac/terraform.tfstate"
         region = "eu-central-1"
         access_key = "access_key_placeholder"
